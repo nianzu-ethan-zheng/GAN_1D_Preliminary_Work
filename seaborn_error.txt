@@ -9,5 +9,4 @@ conda install -c taugspurger statsmodels=0.8.0
 
 This fixed everything.
 
-# 它也会更新nvidia的显卡驱动。 CUDA工具包安装完成后，我们还需要确认，CUDA是否已经正确安装，
-# 我们可以先检查nvcc编译器是否正确安装，在命令提示符窗口中输入：nvcc -V
+
