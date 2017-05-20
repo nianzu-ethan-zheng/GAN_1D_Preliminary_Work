@@ -4,3 +4,8 @@
 
 gpu使用情况查看
 nvidia-smi -l # 实时返回GPU使用情况
+
+
+
+决定使用pip3试一把
+pip3 install tensorflow-gpu
