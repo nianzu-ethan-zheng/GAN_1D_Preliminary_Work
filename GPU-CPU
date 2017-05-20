@@ -12,6 +12,10 @@ pip3 install tensorflow-gpu
 
 
 
-tensorflow-master\tensorflow\examples\tutorials\mnist
+tensorflow-master\tensorflow\examples\tutorials\mnist  good examples 
 % detailed
 http://blog.csdn.net/sb19931201/article/details/53648615
+
+
+cudnn version is old  
+cudnn account must have a punctuation in its code.
