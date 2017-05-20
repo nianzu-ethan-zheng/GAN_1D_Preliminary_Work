@@ -9,3 +9,9 @@ nvidia-smi -l # 实时返回GPU使用情况
 
 决定使用pip3试一把
 pip3 install tensorflow-gpu
+
+
+
+tensorflow-master\tensorflow\examples\tutorials\mnist
+% detailed
+http://blog.csdn.net/sb19931201/article/details/53648615
