@@ -1,0 +1,4 @@
+The pooling and convolutional ops slide a "window" across the input tensor.
+Using tf.nn.conv2d as an example:
+If the input tensor has 4 dimensions: 
+[batch, height, width, channels], then the convolution operates on a 2D window on the height, width dimensions.
