@@ -13,3 +13,8 @@ Goto : [pre_processing](http://scikit-learn.org/stable/modules/preprocessing.htm
 ### 向上取整
 调用Python的math库，即 ceil 方法，专门用于向上取整
 
+## 数组four level
+> array(None,)  
+>>  vector(None,1) or (1,None)  
+>>> maxtrix (None,None)
+>>>> tensor(ALL)
