@@ -3,7 +3,7 @@ Goto : [pre_processing](http://scikit-learn.org/stable/modules/preprocessing.htm
 [And here](http://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.MinMaxScaler.html#examples-using-sklearn-preprocessing-minmaxscaler)<br>
 \--------------------------------------------------------------------------------------------------------
 
-## 取整的几种方式
+# 取整的几种方式
 下面介绍几种常用的取整方法，包括向下取整、四舍五入、向上取整
 ### 向下取整
 向下取整很简单，直接使用int()函数即可
@@ -20,7 +20,7 @@ Goto : [pre_processing](http://scikit-learn.org/stable/modules/preprocessing.htm
 
 array(None,) -->vector(None,1) or (1,None)  --> maxtrix (None,None)--> tensor(ALL)<br>
 \--------------------------------------------------------------------------------------------------------
-## numpy数组拼接方法介绍
+# numpy数组拼接方法介绍
 思路：首先将数组转成列表，然后利用列表的拼接函数append()、extend()等进行拼接处理，最后将列表转成数组。
 
 示例1：
@@ -130,3 +130,24 @@ array([[ 1,  2,  3, 11, 21, 31],
 20.3934997107
 ```
 可知，concatenate()效率更高，适合大规模的数据拼接
+
+\-----------------------------------------------------------------------------------------------
+# 列表排序
+python 列表list中内置了一个十分有用的排序函数sort,sorted，它可以用于列表的排序
+```
+a = [5,2,1,9,6]        
+ 
+>>> sorted(a)                  #将a从小到大排序,不影响a本身结构 
+[1, 2, 5, 6, 9] 
+ 
+>>> sorted(a,reverse = True)   #将a从大到小排序,不影响a本身结构 
+[9, 6, 5, 2, 1] 
+ 
+>>> a.sort()                   #将a从小到大排序,影响a本身结构 
+>>> a 
+[1, 2, 5, 6, 9] 
+ 
+>>> a.sort(reverse = True)     #将a从大到小排序,影响a本身结构 
+>>> a 
+[9, 6, 5, 2, 1]
+```
