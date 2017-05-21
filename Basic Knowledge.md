@@ -84,7 +84,19 @@ numpy的数组没有动态改变大小的功能，numpy.append()函数每次都�
 数组拼接方法三
 
 思路：numpy提供了numpy.concatenate((a1,a2,...), axis=0)函数。能够一次完成多个数组的拼接。其中a1,a2,...是数组类型的参数
+```
+numpy.concatenate((a1, a2, ...), axis=0)
+Join a sequence of arrays along an existing axis.
 
+Parameters:	
+a1, a2, ... : sequence of array_like
+The arrays must have the same shape, except in the dimension corresponding to axis (the first, by default).
+axis : int, optional
+The axis along which the arrays will be joined. Default is 0.
+Returns:	
+res : ndarray
+The concatenated array.
+```
 示例3：
 ```
 >>> a=np.array([1,2,3])
@@ -130,9 +142,12 @@ array([[ 1,  2,  3, 11, 21, 31],
 20.3934997107
 ```
 可知，concatenate()效率更高，适合大规模的数据拼接<br>
-\-----------------------------------------------------------------------------------------------
 
-# 列表排序
+
+
+
+
+## 列表排序
 
 python 列表list中内置了一个十分有用的排序函数sort,sorted，它可以用于列表的排序
 
