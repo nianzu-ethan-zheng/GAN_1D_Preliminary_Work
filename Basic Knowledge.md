@@ -141,13 +141,13 @@ array([[ 1,  2,  3, 11, 21, 31],
 >>> print time2-time1
 20.3934997107
 ```
+
 可知，concatenate()效率更高，适合大规模的数据拼接<br>
 
 
 
 
-
-## 列表排序
+# Sort排序
 
 python 列表list中内置了一个十分有用的排序函数sort,sorted，它可以用于列表的排序
 
