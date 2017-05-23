@@ -6,3 +6,6 @@
 ## Training
 
 ![train](https://github.com/DreamPurchaseZnz/DC_GAN/blob/master/Train%20Process.JPG)
+
+## MLP
+![MLP](https://github.com/DreamPurchaseZnz/Keras/blob/master/MLP.JPG)
