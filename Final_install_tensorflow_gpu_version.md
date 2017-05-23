@@ -27,7 +27,46 @@ Tips：
 [Verify cuda installation](http://xcat-docs.readthedocs.io/en/stable/advanced/gpu/nvidia/verify_cuda_install.html)
 通常的跑几个案例：
 * Run the deviceQuery sample
+```
+# ./bin/ppc64le/linux/release/deviceQuery
+  ./deviceQuery Starting...
+  CUDA Device Query (Runtime API) version (CUDART static linking)
+  Detected 4 CUDA Capable device(s)
+  Device 0: "Tesla K80"
+    CUDA Driver Version / Runtime Version          7.5 / 7.5
+    CUDA Capability Major/Minor version number:    3.7
+    Total amount of global memory:                 11520 MBytes (12079136768 bytes)
+    (13) Multiprocessors, (192) CUDA Cores/MP:     2496 CUDA Cores
+    GPU Max Clock rate:                            824 MHz (0.82 GHz)
+    Memory Clock rate:                             2505 Mhz
+    Memory Bus Width:                              384-bit
+    L2 Cache Size:                                 1572864 bytes
+    ............
+    deviceQuery, CUDA Driver = CUDART, CUDA Driver Version = 7.5, CUDA Runtime Version = 7.5, NumDevs = 4, Device0 = Tesla K80, Device1 = Tesla K80, Device2 = Tesla K80, Device3 = Tesla K80
+    Result = PASS
+```
 * Run the bandwidthTest sample
+
+```
+# ./bin/ppc64le/linux/release/bandwidthTest
+  [CUDA Bandwidth Test] - Starting...
+  Running on...
+  Device 0: Tesla K80
+  Quick Mode
+  Host to Device Bandwidth, 1 Device(s)
+  PINNED Memory Transfers
+    Transfer Size (Bytes)        Bandwidth(MB/s)
+    33554432                     7765.1
+  Device to Host Bandwidth, 1 Device(s)
+  PINNED Memory Transfers
+    Transfer Size (Bytes)        Bandwidth(MB/s)
+    33554432                     7759.6
+  Device to Device Bandwidth, 1 Device(s)
+  PINNED Memory Transfers
+    Transfer Size (Bytes)        Bandwidth(MB/s)
+    33554432                     141485.3
+  Result = PASS
+```
 
 ## Second step: install cudnn 5.1
 cudnn 5.1[cudnn](https://developer.nvidia.com/cudnn)，注册账号，可以下载一个压缩包54M，然后解压文件
