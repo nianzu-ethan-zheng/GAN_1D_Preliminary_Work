@@ -10,7 +10,8 @@ About Parzen Window and Likelihood
 
 ## [Gassian Parzen Window](http://sebastianraschka.com/Articles/2014_kernel_density_est.html) 
 这种方法最基本的思想是给定一个特定的区域（**Window**）对落入其中的样本进行计数，可以得到样本落入该区域的概率大约为：
-$p(x) = \frac{\# of samples in R}{total samples}   $
+<img src="http://chart.googleapis.com/chart?cht=tx&chl= p(x) = \frac{\# of samples in R}{total samples} " style="border:none;">
+
 
 
 
