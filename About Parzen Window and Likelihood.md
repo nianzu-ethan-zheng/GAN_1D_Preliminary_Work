@@ -34,7 +34,8 @@ About Parzen Window and Likelihood
 
 而将将简单的立方体核函数替换掉，采用高斯核：<br>
 ![guassian](https://sebastianraschka.com/images/blog/2014/parzen-rosenblatt/parzen_eq_10.png)<br>
-and ![guassian2](https://sebastianraschka.com/images/blog/2014/parzen-rosenblatt/parzen_eq_11.png)
+![guassian2](https://sebastianraschka.com/images/blog/2014/parzen-rosenblatt/parzen_eq_11.png)
+
 ![效果图](https://upload.wikimedia.org/wikipedia/commons/4/41/Comparison_of_1D_histogram_and_KDE.png)
 ## Likelihood
 可能性其实就是所有采的样本在你所建立的模型中概率的乘积，让这个乘积最大就是最大似然法，而为了计算方便，采用对数的方法，将
