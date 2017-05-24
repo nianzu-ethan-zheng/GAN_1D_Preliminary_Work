@@ -37,9 +37,13 @@ About Parzen Window and Likelihood
 and ![guassian2](https://github.com/DreamPurchaseZnz/Picture/blob/master/Image%203.png)
 ![效果图](https://upload.wikimedia.org/wikipedia/commons/4/41/Comparison_of_1D_histogram_and_KDE.png)
 ## Likelihood
+可能性其实就是所有采的样本在你所建立的模型中概率的乘积，让这个乘积最大就是最大似然法，而为了计算方便，采用对数的方法，将
+乘积运算转换为加法运算。
+
 ![4](https://wikimedia.org/api/rest_v1/media/math/render/svg/d1dfbf94c2412b4a52dc41c91044495c24ed2dee)
 
 ![6](https://wikimedia.org/api/rest_v1/media/math/render/svg/c563da5e65831f45e5467a00e21d3014197847ff)
+
 ![7](https://wikimedia.org/api/rest_v1/media/math/render/svg/b2946dec76f55f04c9f6b9510d54743c5d81a62d)
 
 ## 对parzen_ll的理解
@@ -122,7 +126,9 @@ def cross_validate_sigma(samples, data, sigmas, batch_size):
 ```
 Parzen Window的公式大致对的上，明确了输入（对于MNIST）是60000x1x784的一个批次，大约10个，主要可能考虑到对于高达784的多变量高斯分布计算量必然很大。
 然后考虑到likelihood的计算公式![4](https://wikimedia.org/api/rest_v1/media/math/render/svg/d1dfbf94c2412b4a52dc41c91044495c24ed2dee)
-具体公式复杂度和parzen器的定义对不上，因此无法从公式上对应，大致上是对的。
+
+将Parzen Window估计概率并应用于求解最大似然法，目前来说，对求解似然性于不是最好的办法，但是也没有更好的办法。其基本思路大致是，产生的样本通过高斯核Parzen窗口法计算出一个概率模型Pg（784维的高斯分布），然后估计测试样本的概率，从而计算出在该分布下的对数似然性，方差参数采用交叉验证来获得。
+
 
 
 
