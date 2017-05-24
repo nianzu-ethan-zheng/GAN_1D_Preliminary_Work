@@ -37,12 +37,86 @@ About Parzen Window and Likelihood
 and ![guassian2](https://github.com/DreamPurchaseZnz/Picture/blob/master/Image%203.png)
 ![效果图](https://upload.wikimedia.org/wikipedia/commons/4/41/Comparison_of_1D_histogram_and_KDE.png)
 ## 对parzen_ll的理解
+终于到了主题：
+```
+def theano_parzen(mu, sigma):
+    """
+    Credit: Yann N. Dauphin
+    """
 
+    x = T.matrix()
+    mu = theano.shared(mu)
+    a = ( x.dimshuffle(0, 'x', 1) - mu.dimshuffle('x', 0, 1) ) / sigma
+    E = log_mean_exp(-0.5*(a**2).sum(2))
+    Z = mu.shape[1] * T.log(sigma * numpy.sqrt(numpy.pi * 2))
 
+    return theano.function([x], E - Z)
+```
+这个函数用于创造一个parzen的计算器，其中x的大小为2D向量，通过dimshuffule来变为Ax1xB 这样的向量，mu为图像的所有像素的值，sigma对于所有维都是固定的均为sigma。通过创造一个log_mean_exp函数计算平均值，这是最诡异的地方。你们感受下，T.log与T.exp难道不是一对相反的操作，等于没有操作，然后减去max加上max这是要干嘛？？
 
+```
+def log_mean_exp(a):
+    """
+    Credit: Yann N. Dauphin
+    """
 
+    max_ = a.max(1)
 
+    return max_ + T.log(T.exp(a - max_.dimshuffle(0, 'x')).mean(1))
+```
+定义好Parzen函数之后，通过get_nll函数获得似然值，其中的操作是每次输入一个batch_size,最后对各个batch_size求取平均值
+```
+def get_nll(x, parzen, batch_size=10):
+    """
+    Credit: Yann N. Dauphin
+    """
 
+    inds = range(x.shape[0])
+    n_batches = int(numpy.ceil(float(len(inds)) / batch_size))
+
+    times = []
+    nlls = []
+    for i in range(n_batches):
+        begin = time.time()
+        nll = parzen(x[inds[i::n_batches]])
+        end = time.time()
+        times.append(end-begin)
+        nlls.extend(nll)
+
+        if i % 10 == 0:
+            print i, numpy.mean(times), numpy.mean(nlls)
+
+    return numpy.array(nlls)
+```
+其中可以追查mu的来源,mu ==samples ,于是在下面我们可以发现出mu的蛛丝马迹，reshape函数将三个通道的图片扁平为一维向量，而整个空间定格为整个图片的像素点数。
+```
+samples = model.generator.sample(args.num_samples).eval()
+    output_space = model.generator.mlp.get_output_space()
+    if 'Conv2D' in str(output_space):
+        samples = output_space.convert(samples, output_space.axes, ('b', 0, 1, 'c'))
+        samples = samples.reshape((samples.shape[0], numpy.prod(samples.shape[1:])))
+    del model
+    gc.collect()
+```
+值得一提的是为了获得较好的估计值，他采用验证集来确定最大的似然值对应的sigma,验证集采用的是50000-60000的MNIST字体。
+```
+def cross_validate_sigma(samples, data, sigmas, batch_size):
+
+    lls = []
+    for sigma in sigmas:
+        print sigma
+        parzen = theano_parzen(samples, sigma)
+        tmp = get_nll(data, parzen, batch_size = batch_size)
+        lls.append(numpy.asarray(tmp).mean())
+        del parzen
+        gc.collect()
+
+    ind = numpy.argmax(lls)
+    return sigmas[ind]
+```
+Parzen Window的公式大致对的上，明确了输入（对于MNIST）是60000x1x784的一个批次，大约10个，主要可能考虑到对于高达784的多变量高斯分布计算量必然很大。
+然后考虑到likelihood的计算公式![4](https://wikimedia.org/api/rest_v1/media/math/render/svg/d1dfbf94c2412b4a52dc41c91044495c24ed2dee)
+具体公式复杂度和parzen器的定义对不上，因此无法从公式上对应，大致上是对的。
 
 
 
