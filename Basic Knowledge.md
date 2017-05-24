@@ -1,3 +1,24 @@
+## There are three relevant ops for implementing Theano's dimshuffle in TensorFlow:
+```
+tf.transpose() is used to permute the dimensions of a tensor. If the pattern specified in the arguments to dimshuffle is a permutation of the input tensor's dimensions (i.e. there is no 'x' or missing dimension) you can use tf.transpose() to implement dimshuffle().
+tf.expand_dims() is used to add one or more size-1 dimensions to a tensor. This handles the case where 'x' is specified as part of the dimshuffle() pattern, but does not reorder the existing dimensions.
+tf.squeeze() is used to remove one or more size-1 dimensions from a tensor. This handles the case where a dimension is omitted from a dimshuffle() pattern, but it does not reorder the existing dimensions.
+Assuming that the input is a vector, your example (dimshuffle(0, 'x')) can be expressed using tf.expand_dims() only:
+
+input = tf.placeholder(tf.float32, [None])  # Defines an arbitrary-sized vector.
+result = tf.expand_dims(input, 1)
+
+print result.get_shape()  # ==> TensorShape([Dimension(None), Dimension(1)])
+Taking a more complicated example, dimshuffle(1, 'x', 0) applied to a matrix would be:
+
+input = tf.placeholder(tf.float32, [128, 32])  # Defines a matrix.
+output = tf.expand_dims(tf.transpose(input, [1, 0]), 1)
+
+print output.get_shape()
+# ==> TensorShape([Dimension(32), Dimension(1), Dimension(128)])
+```
+
+
 ## pre_processing
 Goto : [pre_processing](http://scikit-learn.org/stable/modules/preprocessing.html#preprocessing-scaler)
 [And here](http://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.MinMaxScaler.html#examples-using-sklearn-preprocessing-minmaxscaler)<br>
