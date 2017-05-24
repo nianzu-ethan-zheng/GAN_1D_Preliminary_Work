@@ -22,14 +22,15 @@ About Parzen Window and Likelihood
 ## The window function
 对于上述的想法，有一个更加数学的表示：
 
-<img src="http://www.sciweavers.org/tex2img.php?eq=%20%5CPhi%20%28u%29%3D%5Cbegin%7Bcases%7D%0A1%20%26%20%20%7Cu_j%7C%20%5Cleq%20d%20%20%5Cquad%20%5Cforall%20j%5C%5C%0A0%20%26%20otherwise%0A%5Cend%7Bcases%7D%20&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt=" \Phi (u)=\begin{cases}1 &  |u_j| \leq d  \quad \forall j\\0 & otherwise\end{cases} " width="196" height="47" />
+![3](https://sebastianraschka.com/images/blog/2014/parzen-rosenblatt/parzen_eq_06.png)
+
 
 扩展概念（立方体核，hyercube window）我们可以得到下面的概念：<br>
-通过下面的公式可以获得落入该区域的样本个数Kn
+通过下面的公式可以获得落入该区域的样本个数Kn<br>
+![2](https://sebastianraschka.com/images/blog/2014/parzen-rosenblatt/parzen_eq_07.png)
 
-<img src="http://www.sciweavers.org/tex2img.php?eq=k_n%20%3D%20%5Csum_%7Bi%3D1%7D%5E%7Bn%7D%20%5Cphi%28%5Cfrac%7Bx-x_i%7D%7Bh_n%7D%29&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt="k_n = \sum_{i=1}^{n} \phi(\frac{x-x_i}{h_n})" width="143" height="50" />
-
-进而我们可以的得到Rn的概率
+进而我们可以的得到Rn的概率<br>
+![1](https://sebastianraschka.com/images/blog/2014/parzen-rosenblatt/parzen_eq_08.png)
 
 而将将简单的立方体核函数替换掉，采用高斯核：<br>
 ![guassian](https://github.com/DreamPurchaseZnz/Picture/blob/master/Image%202.png)<br>
