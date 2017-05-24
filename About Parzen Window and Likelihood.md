@@ -36,6 +36,12 @@ About Parzen Window and Likelihood
 ![guassian](https://github.com/DreamPurchaseZnz/Picture/blob/master/Image%202.png)<br>
 and ![guassian2](https://github.com/DreamPurchaseZnz/Picture/blob/master/Image%203.png)
 ![效果图](https://upload.wikimedia.org/wikipedia/commons/4/41/Comparison_of_1D_histogram_and_KDE.png)
+## Likelihood
+![4](https://wikimedia.org/api/rest_v1/media/math/render/svg/d1dfbf94c2412b4a52dc41c91044495c24ed2dee)
+
+![6](https://wikimedia.org/api/rest_v1/media/math/render/svg/c563da5e65831f45e5467a00e21d3014197847ff)
+![7](https://wikimedia.org/api/rest_v1/media/math/render/svg/b2946dec76f55f04c9f6b9510d54743c5d81a62d)
+
 ## 对parzen_ll的理解
 终于到了主题：
 ```
