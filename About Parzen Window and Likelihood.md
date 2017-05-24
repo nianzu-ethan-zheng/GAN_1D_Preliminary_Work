@@ -11,4 +11,4 @@ About Parzen Window and Likelihood
 ## [Gassian Parzen Window](http://sebastianraschka.com/Articles/2014_kernel_density_est.html) 
 这种方法最基本的思想是给定一个特定的区域（**Window**）对落入其中的样本进行计数，可以得到样本落入该区域的概率大约为：
 
-<img src="http://www.sciweavers.org/tex2img.php?eq=p%28x%29%3D%5Cfrac%7B%5C%23%20of%20samples%20in%20R%7D%7Btotal%20samples%7D&bc=White&fc=Black&im=png&fs=12&ff=pxfonts&edit=0" align="center" border="0" alt="p(x)=\frac{\# of samples in R}{total samples}" width="158" height="43" />
+<img src="http://www.sciweavers.org/tex2img.php?eq=p%28x%29%3D%5Cfrac%7B%5C%23%20of%20samples%5C%20%20in%5C%20%20R%7D%7Btotal%20%5C%20%20samples%7D&bc=White&fc=Black&im=png&fs=12&ff=mathpple&edit=0" align="center" border="0" alt="p(x)=\frac{\# of samples\  in\  R}{total \  samples}" width="181" height="42" />
