@@ -180,7 +180,7 @@ array([[ 1,  2,  3, 11, 21, 31],
 
 
 
-# Sort排序
+## Sort排序
 
 python 列表list中内置了一个十分有用的排序函数sort,sorted，它可以用于列表的排序
 
