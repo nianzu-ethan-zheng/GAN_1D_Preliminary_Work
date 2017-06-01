@@ -53,6 +53,30 @@ Goto : [pre_processing](http://scikit-learn.org/stable/modules/preprocessing.htm
 
 array(None,) -->vector(None,1) or (1,None)  --> maxtrix (None,None)--> tensor(ALL)<br>
 \--------------------------------------------------------------------------------------------------------
+
+# Sort排序
+
+python 列表list中内置了一个十分有用的排序函数sort,sorted，它可以用于列表的排序
+
+```
+a = [5,2,1,9,6]        
+ 
+>>> sorted(a)                  #将a从小到大排序,不影响a本身结构 
+[1, 2, 5, 6, 9] 
+ 
+>>> sorted(a,reverse = True)   #将a从大到小排序,不影响a本身结构 
+[9, 6, 5, 2, 1] 
+ 
+>>> a.sort()                   #将a从小到大排序,影响a本身结构 
+>>> a 
+[1, 2, 5, 6, 9] 
+ 
+>>> a.sort(reverse = True)     #将a从大到小排序,影响a本身结构 
+>>> a 
+[9, 6, 5, 2, 1]
+```
+
+
 # numpy数组拼接方法介绍
 思路：首先将数组转成列表，然后利用列表的拼接函数append()、extend()等进行拼接处理，最后将列表转成数组。
 
@@ -180,24 +204,4 @@ array([[ 1,  2,  3, 11, 21, 31],
 
 
 
-## Sort排序
 
-python 列表list中内置了一个十分有用的排序函数sort,sorted，它可以用于列表的排序
-
-```
-a = [5,2,1,9,6]        
- 
->>> sorted(a)                  #将a从小到大排序,不影响a本身结构 
-[1, 2, 5, 6, 9] 
- 
->>> sorted(a,reverse = True)   #将a从大到小排序,不影响a本身结构 
-[9, 6, 5, 2, 1] 
- 
->>> a.sort()                   #将a从小到大排序,影响a本身结构 
->>> a 
-[1, 2, 5, 6, 9] 
- 
->>> a.sort(reverse = True)     #将a从大到小排序,影响a本身结构 
->>> a 
-[9, 6, 5, 2, 1]
-```
