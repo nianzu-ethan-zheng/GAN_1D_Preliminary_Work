@@ -1,4 +1,16 @@
-## There are three relevant ops for implementing Theano's dimshuffle in TensorFlow:
+## create  a gif
+```
+import imageio
+import os
+filenames = os.listdir('Process_DC_small')
+
+image_set = []
+for filename in filenames:
+    image_set.append(imageio.imread('Process_DC_small/'+filename))
+imageio.mimsave('small.gif',image_set)
+```
+
+## Tensorflow vs Theano's dimshuffle:
 ```
 tf.transpose() is used to permute the dimensions of a tensor. If the pattern specified in the arguments to dimshuffle is a permutation of the input tensor's dimensions (i.e. there is no 'x' or missing dimension) you can use tf.transpose() to implement dimshuffle().
 tf.expand_dims() is used to add one or more size-1 dimensions to a tensor. This handles the case where 'x' is specified as part of the dimshuffle() pattern, but does not reorder the existing dimensions.
