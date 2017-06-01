@@ -21,7 +21,13 @@
 <img src='https://github.com/DreamPurchaseZnz/Picture/blob/master/process_train_loss-1500.jpg'/>
 <img src='https://github.com/DreamPurchaseZnz/Picture/blob/master/process_train_loss-20000.jpg'/>
 
+<img src='https://github.com/DreamPurchaseZnz/Picture/blob/master/small_classifier.png'/>
+<img src='https://github.com/DreamPurchaseZnz/Picture/blob/master/small_classifier-1500.png'/>
 
+>结论：
+* 在小样本的情况下，生成对抗模型训练依然可以进行，效果出乎意料，训练出类似大样本的形态
+* 将模型迁移到分类模型中，模型经过一个周期的训练，达到的初始精度为0.60左右，说明在小样本下，模型可以获取特征，并用于分类；10个周期快速收敛，达到理想精度。
+* 总的来说，小样本不影响模型的收敛性，只影响模型的精度问题。想要提高其精度必须增加相应的样本。
 
 ## MLP
 ![MLP](https://github.com/DreamPurchaseZnz/Keras/blob/master/MLP.JPG)
