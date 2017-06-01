@@ -13,6 +13,8 @@
 ![process_tracker](https://github.com/DreamPurchaseZnz/Picture/blob/master/process_train_loss.jpg)
 ![gif](https://github.com/DreamPurchaseZnz/Picture/blob/master/small.gif)
 
+<img src="image1.https://github.com/DreamPurchaseZnz/Picture/blob/master/process_train_loss.jpg" width="425"/> <img src="https://github.com/DreamPurchaseZnz/Picture/blob/master/small.gif" width="100"/> 
+
 ![result](https://github.com/DreamPurchaseZnz/Picture/blob/master/generated_image.png)
 
 ## MLP
