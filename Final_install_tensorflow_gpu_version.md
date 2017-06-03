@@ -88,6 +88,7 @@ example 测试：[tensorflow源码](https://github.com/tensorflow/tensorflow/tre
 1. 推荐使用highlight the point:cudnn 5.1
 2. 一个错误的解决办法： I c:\tf_jenkins\home\workspace\release-win\device\gpu\os\windows\tensorflow\stream_executor\dso_loader.cc:119] Couldn't open CUDA library cupti64_80.dll  ----------------->将NVIDIA GPU Computing Toolkit\CUDA\v8.0\extras\CUPTI\libx64文件夹下的文件copy到CUDA\v8.0\bin文件夹下。
 3. 推荐调试平台： 一定采用command line 来调试程序，否则一些错误无法被捕捉
+4. 设置系统变量：推荐将PATH路径的全部复制出来，然后放在txt文件中，按照样例添加相应的路径，然后全部复制到"My Computer" > "Properties" > "Advanced" > "Environment Variables" > "Path"中；还用一种方法很方便：采用命令行（command line）的方法，打开cmd，输入set PATH=%PATH%;YOUR\PAHT
 
 ## continue
 在安装scikit-learn 时需要注意，TensorFlow可能会出现以下错误：无法定位程序输入点mkl-lapack-cgesvd-sf 
