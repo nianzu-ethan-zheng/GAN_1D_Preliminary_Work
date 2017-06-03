@@ -89,3 +89,7 @@ example 测试：[tensorflow源码](https://github.com/tensorflow/tensorflow/tre
 2. 一个错误的解决办法： I c:\tf_jenkins\home\workspace\release-win\device\gpu\os\windows\tensorflow\stream_executor\dso_loader.cc:119] Couldn't open CUDA library cupti64_80.dll  ----------------->将NVIDIA GPU Computing Toolkit\CUDA\v8.0\extras\CUPTI\libx64文件夹下的文件copy到CUDA\v8.0\bin文件夹下。
 3. 推荐调试平台： 一定采用command line 来调试程序，否则一些错误无法被捕捉
 
+## continue
+在安装scikit-learn 时需要注意，TensorFlow可能会出现以下错误：无法定位程序输入点mkl-lapack-cgesvd-sf 
+![error](https://github.com/DreamPurchaseZnz/Picture/blob/master/scikit-error.png)
+对于上面的错误,基本的办法就是把tensorflow卸载了，再重新安装。相应的库需要更新，具体的是用到什么更新什么。
