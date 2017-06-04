@@ -12,6 +12,11 @@ imageio.mimsave('small.gif',image_set)
 
 # Tensorflow vs Theano's dimshuffle:
 ```
+x_train = x_train.transpose(0,3,1,2)
+x_test = x_test.transpose(0,3,1,2)
+print x_train.shape
+```
+```
 tf.transpose() is used to permute the dimensions of a tensor. If the pattern specified in the arguments to dimshuffle is a permutation of the input tensor's dimensions (i.e. there is no 'x' or missing dimension) you can use tf.transpose() to implement dimshuffle().
 tf.expand_dims() is used to add one or more size-1 dimensions to a tensor. This handles the case where 'x' is specified as part of the dimshuffle() pattern, but does not reorder the existing dimensions.
 tf.squeeze() is used to remove one or more size-1 dimensions from a tensor. This handles the case where a dimension is omitted from a dimshuffle() pattern, but it does not reorder the existing dimensions.
