@@ -1,5 +1,5 @@
 # DC_GAN
-> 2D convolution only really makes sense under the assumption that the input is spatially continuous over both dimensions (like pictures). 
+* 2D convolution only really makes sense under the assumption that the input is spatially continuous over both dimensions (like pictures). 
 ##  Structure of Generator and Generator
 
 ![structure](https://github.com/DreamPurchaseZnz/DC_GAN/blob/master/STRUCTURE.JPG)
