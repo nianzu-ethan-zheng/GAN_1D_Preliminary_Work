@@ -11,3 +11,14 @@ a reasonable structure is very important to neural network
   
 * Second step : use the structure and input data to design GAN  and classifier
 * compare two method and get the result
+# Structure of GAN1D
+
+![structure](https://github.com/DreamPurchaseZnz/Picture/blob/master/gan1D/structure.JPG)
+
+# Trainning process of GAN1D
+
+![tranning](https://github.com/DreamPurchaseZnz/Picture/blob/master/gan1D/train_precess.JPG)
+
+# How to use GAN1D
+
+![classifier](https://github.com/DreamPurchaseZnz/Picture/blob/master/gan1D/train_precess.JPG)
