@@ -3,7 +3,7 @@ this question have been proved.samll samples do nothing with convergence,but is 
 
 ## Regression
 All I have done is classifying. There are still some difference in regression. so how to construst 
-a reasonable structure is very important to me
+a reasonable structure is very important to neural network
 
 * First step : use spectrum dataset to do regression and see the effect of the strucure
   * without conv:  just dense layer
