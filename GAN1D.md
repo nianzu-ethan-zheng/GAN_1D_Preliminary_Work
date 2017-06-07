@@ -21,4 +21,4 @@ a reasonable structure is very important to neural network
 
 # How to use GAN1D
 
-![classifier](https://github.com/DreamPurchaseZnz/Picture/blob/master/gan1D/train_precess.JPG)
+![classifier](https://github.com/DreamPurchaseZnz/Picture/blob/master/gan1D/classifier.JPG)
