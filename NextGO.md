@@ -1,4 +1,4 @@
-## small samples
+## Small samples
 this question have been proved.samll samples do nothing with convergence,but is relevant to accuracy.
 
 ## Regression
