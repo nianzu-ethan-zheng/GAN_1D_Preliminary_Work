@@ -22,3 +22,17 @@ a reasonable structure is very important to neural network
 # How to use GAN1D
 
 ![classifier](https://github.com/DreamPurchaseZnz/Picture/blob/master/gan1D/classifier.JPG)
+
+# Discussion and Result
+
+Basically the test have proved gan's effectiveness in spectrum. As the loss plot shows, The process can be divided into six stages.Every stage have a gif to show what happen and we can draw some conclusion about the competation of  generator and dicriminator.
+
+
+    Stage 1: Discriminator can easily judge which is true and which is false,so generator loss become very big and then while discriminator is in optimum , Generator has been optimised and then loss rapidly reduce，so discriminator loss increases.
+    Stage 2: Discriminator stay in the stage of optimization and Generator work hard to reduce the loss.however,the result is not good.
+    Stage 3: Generator obtain some specific feature and the result is getting better.Meanwhile Discriminator loss increase slightly.
+    Stage 4: Generator continue to escape the watch of Dicriminator.
+    Stage 5: Generator come to the begin point of convergence.
+    stage 6: We can see this stage as approximate convergence. The trend show us that 'the two player game' come to saddle point.
+
+
