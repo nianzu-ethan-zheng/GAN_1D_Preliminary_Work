@@ -33,12 +33,21 @@ a reasonable structure is very important to neural network
 
 Basically the test have proved gan's effectiveness in spectrum. As the loss plot shows, The process can be divided into six stages.Every stage have a gif to show what happen and we can draw some conclusion about the competation of  generator and dicriminator.
 
+![]()
 
-    Stage 1: Discriminator can easily judge which is true and which is false,so generator loss become very big and then while discriminator is in optimum , Generator has been optimised and then loss rapidly reduce，so discriminator loss increases.
-    Stage 2: Discriminator stay in the stage of optimization and Generator work hard to reduce the loss.however,the result is not good.
-    Stage 3: Generator obtain some specific feature and the result is getting better.Meanwhile Discriminator loss increase slightly.
-    Stage 4: Generator continue to escape the watch of Dicriminator.
-    Stage 5: Generator come to the begin point of convergence.
-    Stage 6: We can see this stage as approximate convergence. The trend show us that 'the two player game' come to saddle point.
+![]()
+![]()
+![]()
+![]()
+![]()
+![]()
+* Stage 1: Discriminator can easily judge which is true and which is false,so generator loss become very big and then while discriminator is in optimum , Generator has been optimised and then loss rapidly reduce，so discriminator loss increases.
+* Stage 2: Discriminator stay in the stage of optimization and Generator work hard to reduce the loss.however,the result is not good.
+* Stage 3: Generator obtain some specific feature and the result is getting better.Meanwhile Discriminator loss increase slightly.
+* Stage 4: Generator continue to escape the watch of Dicriminator.
+* Stage 5: Generator come to the begin point of convergence.
+* Stage 6: We can see this stage as approximate convergence. The trend show us that 'the two player game' come to saddle point.
+
+One of the most insteresting piont is the code length,which refers to the noise size. At beginning of the test ,the size of code is setted as **200** in order to cover the enough information in spectrum,which have 1868 dimensions and the enough epochs(10000) is given.Unfortunatorly the training is stuck in aroud 2300 and can not move on. The result picture show the competation is completely abnormal.for the picture below，we can see that there are only a horizontal line. The following process is just change the level of the line. **However** when the code reset as** 100**, the incredible thing happened. just as you see,it provides us a new way to establish model. Also it leaves us lots of quention, **what is the reason for this phenamenon? **.we can investigate later.
 
 
