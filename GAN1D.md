@@ -55,9 +55,9 @@ One of the most insteresting piont is the code length,which refers to the noise 
 <img src="https://github.com/DreamPurchaseZnz/DC_GAN/blob/master/gan1D/code100_epoch1999_0.png" width="450" height="450" />
 <img src="https://github.com/DreamPurchaseZnz/DC_GAN/blob/master/gan1D/code200_epoch2000_0.png" width="450" height="450" />
 # Classifier test
-<div align=center>
+
 ![loss](https://github.com/DreamPurchaseZnz/DC_GAN/blob/master/gan1D/spectrum_loss_5000.png)
 ![dcm](https://github.com/DreamPurchaseZnz/DC_GAN/blob/master/gan1D/spectrum_dcm_5000.png)
-</div>
+
 
 
