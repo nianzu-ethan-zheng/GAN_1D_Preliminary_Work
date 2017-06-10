@@ -38,15 +38,11 @@ Basically the test have proved gan's effectiveness in spectrum. As the loss plot
 <img src="https://github.com/DreamPurchaseZnz/DC_GAN/blob/master/gan1D/0_0.png" width="450" height="450" />
 <img src="https://github.com/DreamPurchaseZnz/DC_GAN/blob/master/gan1D/500_0.png" width="450" height="450"/>
 
-<img src="">
-<img src="">
-![5]()
-![2](https://github.com/DreamPurchaseZnz/DC_GAN/blob/master/gan1D/1158_0.png)
-![3](https://github.com/DreamPurchaseZnz/DC_GAN/blob/master/gan1D/1487_0.png)
-![4](https://github.com/DreamPurchaseZnz/DC_GAN/blob/master/gan1D/1689_0.png)
-![6](https://github.com/DreamPurchaseZnz/DC_GAN/blob/master/gan1D/code100_epoch1999_0.png)
-
-![True ](https://github.com/DreamPurchaseZnz/DC_GAN/blob/master/gan1D/true.png)
+<img src="https://github.com/DreamPurchaseZnz/DC_GAN/blob/master/gan1D/1158_0.png" width="450" height="450"/>
+<img src="https://github.com/DreamPurchaseZnz/DC_GAN/blob/master/gan1D/1487_0.png" width="450" height="450"/>
+<img src="https://github.com/DreamPurchaseZnz/DC_GAN/blob/master/gan1D/1689_0.png" width="450" height="450" />
+<img src="https://github.com/DreamPurchaseZnz/DC_GAN/blob/master/gan1D/code100_epoch1999_0.png" width="450" height="450" />
+<img src="https://github.com/DreamPurchaseZnz/DC_GAN/blob/master/gan1D/true.png" width="450" height="450" />
 
 * Stage 1: Discriminator can easily judge which is true and which is false,so generator loss become very big and then while discriminator is in optimum , Generator has been optimised and then loss rapidly reduce，so discriminator loss increases.
 * Stage 2: Discriminator stay in the stage of optimization and Generator work hard to reduce the loss.however,the result is not good.
