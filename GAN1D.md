@@ -34,16 +34,9 @@ a reasonable structure is very important to neural network
 Basically the test have proved gan's effectiveness in spectrum. As the loss plot shows, The process can be divided into six stages.Every stage have a gif to show what happen and we can draw some conclusion about the competation of  generator and dicriminator.
 
 ![loss](https://github.com/DreamPurchaseZnz/DC_GAN/blob/master/gan1D/Spectrum_loss.png)
-<figure>
-  <img src="https://github.com/DreamPurchaseZnz/DC_GAN/blob/master/gan1D/0_0.png" width="300" height="300" />
-  <img src="https://github.com/DreamPurchaseZnz/DC_GAN/blob/master/gan1D/500_0.png" width="300" height="300"/>
-  <figcaption>Stage 1 and stage 2 </figcaption>
-</figure>
-
 
 <img src="https://github.com/DreamPurchaseZnz/DC_GAN/blob/master/gan1D/0_0.png" width="450" height="450" />
 <img src="https://github.com/DreamPurchaseZnz/DC_GAN/blob/master/gan1D/500_0.png" width="450" height="450"/>
-
 <img src="https://github.com/DreamPurchaseZnz/DC_GAN/blob/master/gan1D/1158_0.png" width="450" height="450"/>
 <img src="https://github.com/DreamPurchaseZnz/DC_GAN/blob/master/gan1D/1487_0.png" width="450" height="450"/>
 <img src="https://github.com/DreamPurchaseZnz/DC_GAN/blob/master/gan1D/1689_0.png" width="450" height="450" />
@@ -58,6 +51,6 @@ Basically the test have proved gan's effectiveness in spectrum. As the loss plot
 * Stage 6: We can see this stage as approximate convergence. The trend show us that 'the two player game' come to saddle point.
 
 One of the most insteresting piont is the code length,which refers to the noise size. At beginning of the test ,the size of code is setted as **200** in order to cover the enough information in spectrum,which have 1868 dimensions and the enough epochs(10000) is given.Unfortunatorly the training is stuck in aroud 2300 and can not move on. The result picture show the competation is completely abnormal.for the picture below，we can see that there are only a horizontal line. The following process is just change the level of the line. **However** when the code reset as **100** , the incredible thing happened. just as you see,it provides us a new way to establish model. Also it leaves us lots of quention, **what is the reason for this phenamenon?** .we can investigate later.
-![code100](https://github.com/DreamPurchaseZnz/DC_GAN/blob/master/gan1D/code100_epoch1999_0.png)
-![code200](https://github.com/DreamPurchaseZnz/DC_GAN/blob/master/gan1D/code200_epoch2000_0.png)
 
+<img src="https://github.com/DreamPurchaseZnz/DC_GAN/blob/master/gan1D/code100_epoch1999_0.png" width="450" height="450" />
+<img src="https://github.com/DreamPurchaseZnz/DC_GAN/blob/master/gan1D/code200_epoch2000_0.png" width="450" height="450" />
