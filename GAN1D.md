@@ -36,9 +36,9 @@ Basically the test have proved gan's effectiveness in spectrum. As the loss plot
 ![loss](https://github.com/DreamPurchaseZnz/DC_GAN/blob/master/gan1D/Spectrum_loss.png)
 
 <img src="https://github.com/DreamPurchaseZnz/DC_GAN/blob/master/gan1D/0_0.png" width="450" height="450" />
-<img src="https://github.com/DreamPurchaseZnz/DC_GAN/blob/master/gan1D/500_0.png" width="450" height="450"/>
-<img src="https://github.com/DreamPurchaseZnz/DC_GAN/blob/master/gan1D/1158_0.png" width="450" height="450"/>
-<img src="https://github.com/DreamPurchaseZnz/DC_GAN/blob/master/gan1D/1487_0.png" width="450" height="450"/>
+<img src="https://github.com/DreamPurchaseZnz/DC_GAN/blob/master/gan1D/500_0.png" width="450" height="450" />
+<img src="https://github.com/DreamPurchaseZnz/DC_GAN/blob/master/gan1D/1158_0.png" width="450" height="450" />
+<img src="https://github.com/DreamPurchaseZnz/DC_GAN/blob/master/gan1D/1487_0.png" width="450" height="450" />
 <img src="https://github.com/DreamPurchaseZnz/DC_GAN/blob/master/gan1D/1689_0.png" width="450" height="450" />
 <img src="https://github.com/DreamPurchaseZnz/DC_GAN/blob/master/gan1D/code100_epoch1999_0.png" width="450" height="450" />
 <img src="https://github.com/DreamPurchaseZnz/DC_GAN/blob/master/gan1D/true.png" width="450" height="450" />
