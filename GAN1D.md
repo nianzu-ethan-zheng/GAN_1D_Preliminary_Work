@@ -33,9 +33,9 @@ a reasonable structure is very important to neural network
 
 Basically the test have proved gan's effectiveness in spectrum. As the loss plot shows, The process can be divided into six stages.Every stage have a gif to show what happen and we can draw some conclusion about the competation of  generator and dicriminator.
 
-![]()
+![loss](https://github.com/DreamPurchaseZnz/DC_GAN/blob/master/gan1D/Spectrum_loss.png)
 
-![]()
+![loss_1](https://github.com/DreamPurchaseZnz/DC_GAN/blob/master/gan1D/Spectrum_process_1.swf)
 ![]()
 ![]()
 ![]()
