@@ -35,12 +35,15 @@ Basically the test have proved gan's effectiveness in spectrum. As the loss plot
 
 ![loss](https://github.com/DreamPurchaseZnz/DC_GAN/blob/master/gan1D/Spectrum_loss.png)
 
-![loss_1](DC_GAN/gan1D/GIFTemp_1E84.avi)
-![]()
-![]()
-![]()
-![]()
-![]()
+![loss_1](https://github.com/DreamPurchaseZnz/DC_GAN/blob/master/gan1D/0_0.png)
+![5](https://github.com/DreamPurchaseZnz/DC_GAN/blob/master/gan1D/500_0.png)
+![2](https://github.com/DreamPurchaseZnz/DC_GAN/blob/master/gan1D/1158_0.png)
+![3](https://github.com/DreamPurchaseZnz/DC_GAN/blob/master/gan1D/1487_0.png)
+![4](https://github.com/DreamPurchaseZnz/DC_GAN/blob/master/gan1D/1689_0.png)
+![6](https://github.com/DreamPurchaseZnz/DC_GAN/blob/master/gan1D/code100_epoch1999_0.png)
+
+![True ](https://github.com/DreamPurchaseZnz/DC_GAN/blob/master/gan1D/true.png)
+
 * Stage 1: Discriminator can easily judge which is true and which is false,so generator loss become very big and then while discriminator is in optimum , Generator has been optimised and then loss rapidly reduce，so discriminator loss increases.
 * Stage 2: Discriminator stay in the stage of optimization and Generator work hard to reduce the loss.however,the result is not good.
 * Stage 3: Generator obtain some specific feature and the result is getting better.Meanwhile Discriminator loss increase slightly.
@@ -49,5 +52,6 @@ Basically the test have proved gan's effectiveness in spectrum. As the loss plot
 * Stage 6: We can see this stage as approximate convergence. The trend show us that 'the two player game' come to saddle point.
 
 One of the most insteresting piont is the code length,which refers to the noise size. At beginning of the test ,the size of code is setted as **200** in order to cover the enough information in spectrum,which have 1868 dimensions and the enough epochs(10000) is given.Unfortunatorly the training is stuck in aroud 2300 and can not move on. The result picture show the competation is completely abnormal.for the picture below，we can see that there are only a horizontal line. The following process is just change the level of the line. **However** when the code reset as **100** , the incredible thing happened. just as you see,it provides us a new way to establish model. Also it leaves us lots of quention, **what is the reason for this phenamenon?** .we can investigate later.
-
+![code100](https://github.com/DreamPurchaseZnz/DC_GAN/blob/master/gan1D/code100_epoch1999_0.png)
+![code200](https://github.com/DreamPurchaseZnz/DC_GAN/blob/master/gan1D/code200_epoch2000_0.png)
 
