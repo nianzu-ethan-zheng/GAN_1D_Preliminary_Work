@@ -35,8 +35,8 @@ Basically the test have proved gan's effectiveness in spectrum. As the loss plot
 
 ![loss](https://github.com/DreamPurchaseZnz/DC_GAN/blob/master/gan1D/Spectrum_loss.png)
 <figure>
-  <img src="https://github.com/DreamPurchaseZnz/DC_GAN/blob/master/gan1D/0_0.png" width="450" height="450" />
-  <img src="https://github.com/DreamPurchaseZnz/DC_GAN/blob/master/gan1D/500_0.png" width="450" height="450"/>
+  <img src="https://github.com/DreamPurchaseZnz/DC_GAN/blob/master/gan1D/0_0.png" width="300" height="300" />
+  <img src="https://github.com/DreamPurchaseZnz/DC_GAN/blob/master/gan1D/500_0.png" width="300" height="300"/>
   <figcaption>Stage 1 and stage 2 </figcaption>
 </figure>
 
