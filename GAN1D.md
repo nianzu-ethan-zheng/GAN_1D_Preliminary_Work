@@ -54,10 +54,17 @@ One of the most insteresting piont is the code length,which refers to the noise 
 
 <img src="https://github.com/DreamPurchaseZnz/DC_GAN/blob/master/gan1D/code100_epoch1999_0.png" width="450" height="450" />
 <img src="https://github.com/DreamPurchaseZnz/DC_GAN/blob/master/gan1D/code200_epoch2000_0.png" width="450" height="450" />
+
 # Classifier test
 
 ![loss](https://github.com/DreamPurchaseZnz/DC_GAN/blob/master/gan1D/spectrum_loss_5000.png)
 ![dcm](https://github.com/DreamPurchaseZnz/DC_GAN/blob/master/gan1D/spectrum_dcm_5000.png)
 
+we can sample from the trainning process.At 1000 epochs, take weight to classifier and the result can converge ,however it's unbelievable that it can't be train to do regression ,taking the weights from 5000 epochs.
+
+![clf](https://github.com/DreamPurchaseZnz/DC_GAN/blob/master/gan1D/spectrum_clf_1000.png)
+![clf_4000](https://github.com/DreamPurchaseZnz/DC_GAN/blob/master/gan1D/spectrum_clf_5000.png)
+
+Neither is the optimum state ,which we want. There may be some reason for discriminator's mistake. Maybe,Genarator is too strong that Dicrimator can't compete with it.
 
 
