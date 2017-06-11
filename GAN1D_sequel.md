@@ -26,8 +26,8 @@ there are some reason to verify:
 Now let's verify the first assumption. The test will be hold in  the mmist dataset, only use 40 samples just as same as the spectrum dataset.
 Look at its result and compare with the former.
 
-![mnist](gan1D/mnist_40sample_loss)
-![spectrum](spectrum_clf_5000)
+![mnist](gan1D/mnist_40sample_loss.png)
+![spectrum](gan1D/spectrum_clf_5000.png)
 
 This test can tell us something about samples number. Both classifier models don't work well,we can guss that 40 samples,only 2.1%(40/1867=2.1% , samples / wave length can be defined as sample density ) samples used to establish model is far from enough. we need more samples to decrease sample sparsity.Here comes a question.
 
