@@ -20,4 +20,5 @@ there are some reason to verify:
 
 * maybe it is completely unrealistic, it works well in classification,however maybe it's not suitable for regression.
 * maybe there are another unknown reason for it.
-so what exactly is the reason can account for this unthinkable phenamenon?
+
+**so what exactly is the reason can account for this unthinkable phenamenon?**
