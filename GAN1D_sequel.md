@@ -22,3 +22,5 @@ there are some reason to verify:
 * maybe there are another unknown reason for it.
 
 **so what exactly is the reason can account for this unthinkable phenamenon?**
+Now let's verify the first assumption. The test will be hold in  the mmist dataset, only use 40 samples just as same as the spectrum dataset.
+Look at its result and compare with the former.
