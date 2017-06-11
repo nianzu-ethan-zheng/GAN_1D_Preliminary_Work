@@ -67,4 +67,6 @@ we can sample from the trainning process.At 1000 epochs, take weight to classifi
 
 Neither is the optimum state ,which we want. There may be some reason for discriminator's mistake. Maybe,Genarator is too strong that Dicrimator can't compete with it.
 
+![contrast](https://github.com/DreamPurchaseZnz/DC_GAN/blob/master/gan1D/Trained_weight.png)
+
 
