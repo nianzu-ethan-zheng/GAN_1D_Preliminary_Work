@@ -1,8 +1,8 @@
-Maybe Opitimizer have some problem.
-
-![gif](gan1D/saddle_point_evaluation_optimizers.gif)
-![gif2](gan1D/contours_evaluation_optimizers.gif)
-
+# MAIN IDEA
+-----------------------------------
+Assumption: If D have enough capacity, and G will be allowed to reach its optimum. Thus, the main solution is to strength the ability of D and weaken the capacity of G. 
+-----------------------------------
+## TWICE TRAINING
 I can't understand what happen to GAN. Even training Discriminator twice than Generator, it can't reduce the loss of discriminator.
 
 ![gen](gan1D/spectrum_k2_4000.png) 
@@ -42,3 +42,18 @@ so next stage is that do experienment in dataset of 594 samples:
 > tune the SVM model and try some predictive label.
 >> tune the MLP model to guarantee that the D G have the right structure.
 >>> tuen the GAN model
+## THE DETERMINATION OF TRAINING EPOCH 
+There is traditional  way to measure overfitting is using cross validtion.however,maybe not suitable to our process.Because,the final result is to serve for regressor. So we can load weight from different train epochs to see whether regressor is better or not.
+
+![Train_weight_Epoch](gan1D/Train_weight_Epoch.png)
+
+As discribed in the image, we can know that weight loaded from 1000 epoch before can make regression loss great decrease and After 1000 eopchs, the curve stucked at a higher lever.
+
+## REINFORCE DISCRIMINATOR BY INCREASE THE NEURONS 
+### STAGE ONE JUST ENHANCE THE FIRST LAYER
+![Train_weight_Epoch](gan1D/spectrum_e2000c50_d128.png)
+
+much better
+
+![Train_weight_Epoch](gan1D/spectrum_dcm_2000_d128.png)
+### STAGE TWO BOTH CONVOLUTIONAL LAYER NEED TO BE ENHANCED
