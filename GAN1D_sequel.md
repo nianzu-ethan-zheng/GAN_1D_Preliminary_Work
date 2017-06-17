@@ -56,4 +56,4 @@ As discribed in the image, we can know that weight loaded from 1000 epoch before
 much better
 
 ![Train_weight_Epoch](gan1D/spectrum_dcm_2000_d128.png)
-### STAGE TWO BOTH CONVOLUTIONAL LAYER NEED TO BE ENHANCED
+### STAGE TWO BOTH G AND D NEED TO BE ENHANCED
