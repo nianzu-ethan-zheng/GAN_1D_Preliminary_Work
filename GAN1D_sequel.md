@@ -1,7 +1,7 @@
 # MAIN IDEA
 -----------------------------------
-Assumption: If D have enough capacity, and G will be allowed to reach its optimum. Thus, the main solution is to strength the ability of D and weaken the capacity of G. 
------------------------------------
+**Assumption**: If D have enough capacity, and G will be allowed to reach its optimum. Thus, the main solution is to strength the ability of D and weaken the capacity of G. 
+
 ## TWICE TRAINING
 I can't understand what happen to GAN. Even training Discriminator twice than Generator, it can't reduce the loss of discriminator.
 
