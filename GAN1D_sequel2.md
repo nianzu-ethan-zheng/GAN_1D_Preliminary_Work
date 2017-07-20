@@ -1,5 +1,5 @@
 # The result
-Just post the picture and don't wanna say a word
+Just post the picture 
 
 ![loss](Gan1D_sequel/oil_loss.png)
 ![loss](Gan1D_sequel/oil_loss_dcm.png)
